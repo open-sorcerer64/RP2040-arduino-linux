@@ -12,9 +12,9 @@ run the `install.sh` file as root.
 Step 1 
 Download the `install.sh` file
 Step 2
-Open the folder where you have downloaded the file in terminal, usingh `cd` command (e.g. `cd downloads`)
-Step 3
 type `sudo -i` to become root
+Step 3
+Open the folder where you have downloaded the file in terminal, usingh `cd` command (e.g. `cd downloads`)
 Step 4
 run the file using `bash ./install.sh`
 
