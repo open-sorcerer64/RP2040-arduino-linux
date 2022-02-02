@@ -1,25 +1,20 @@
 # Raspberry-pi-pico-udev
-To use the arduino ide with pico using a linux computer
+## A Simple Script to program your RP2040 micro-controller (like, Raspberry Pi Pico) on Arduino IDE using a Linux PC
 
-So you have just installed Arduino IDE on your linux computer to program your pico( or any other RP2040 board). Just opened the blink example sketch but after it compiled it showed an error while uploading (The pico was in bootloader mode). What should you do now.
-![Example Image](https://github.com/Tejas-Singh-py/Raspberry-pi-pico-udev/blob/7a25b1402e6b22d384f4e72b1a77b2cc38725157/example.png)
-<It is only for the official version, not @earlephilhower 's version'>
 
-the problem might be due to missing `udev` rules (Arduino dosn't use mass storage upload but the other interface exposed by the bootloader). 
+![Example Image](https://github.com/open-sorcerer64/Raspberry-pi-pico-udev/blob/main/example.png?raw=true)
 
-run the `install.sh` file as root.
+If the IDE throws an error while uploading code to micro-controller then you're at the right place, the problem might be due to missing `udev` rules (Arduino dosn't use mass storage upload but the other interface exposed by the bootloader). 
 
-Step 1 
-Download the `install.sh` file
-Step 2
-type `sudo -i` to become root
-Step 3
-Open the folder where you have downloaded the file in terminal, usingh `cd` command (e.g. `cd downloads`)
-Step 4
-run the file using `bash ./install.sh`
+### To run the script:
+
+```bash
+mkdir ~/temp
+cd ~/temp
+wget https://raw.githubusercontent.com/open-sorcerer64/Raspberry-pi-pico-udev/main/install.sh 
+./install | sudo bash
+```
 
 Voila, it should work now.
 
-
-
-P.S. This is my **first Github Repository**. Sorry for (if any) typos.
+If you find any problem feel free to open a [issue](https://github.com/open-sorcerer64/Raspberry-pi-pico-udev/issues)
