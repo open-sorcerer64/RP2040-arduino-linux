@@ -5,7 +5,7 @@
 ![Example Image](https://github.com/open-sorcerer64/Raspberry-pi-pico-udev/blob/main/example.png?raw=true)
 
 If the IDE throws an error while uploading code to micro-controller then you're at the right place, the problem might be due to missing `udev` rules 
-
+This problem usually occurs because Arduino dosn't use mass storage upload but the other interface exposed by the bootloader
 
 
 ### To run the script:
